@@ -28,20 +28,23 @@ A high-throughput, multi-process IoT telemetry processing pipeline built in C++ 
 ├── dispatcher.cpp        # Master system orchestrator
 ├── run.sh                # Automation script for build & test run
 └── .gitignore            # Clean repository filter rules
+```
 
+## ⚡ Quick Start
 
-⚡ Quick Start
+1. **Prerequisites**
 
-1. Prerequisites
+   Ensure you are running on a Linux/UNIX environment with `g++` and POSIX development libraries.
 
-Ensure you are running on a Linux/UNIX environment with g++ and POSIX development libraries.
+2. **Execution via Automation Script**
 
-2. Execution via Automation Script
+   Use the built-in compiler and execution helper script to launch the full pipeline immediately with configured parameters:
 
-Use the built-in compiler and execution helper script to launch the full pipeline immediately with configured parameters:
+   ```bash
+   # Make the run script executable
+   chmod +x run.sh
 
-# Make the run script executable
-chmod +x run.sh
+   # Compile and run the pipeline
+   ./run.sh -i ./data -o ./output -n 4 -q 100 -f /tmp/sensor_fifo -s /sensor_shm
+   ```
 
-# Compile and run the pipeline
-./run.sh -i ./data -o ./output -n 4 -q 100 -f /tmp/sensor_fifo -s /sensor_shm
