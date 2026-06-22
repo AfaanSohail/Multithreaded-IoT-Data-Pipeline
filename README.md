@@ -51,4 +51,4 @@ A high-throughput, multi-process IoT telemetry processing pipeline built in C++ 
 ---
 
 ## 📖 Full Documentation
-For the full documentation and explanation of the project, visit the [Project Report](./report/).
+For the full documentation and explanation of the project, visit the [Project Report](./report/report.pdf).
