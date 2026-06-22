@@ -48,3 +48,7 @@ A high-throughput, multi-process IoT telemetry processing pipeline built in C++ 
    ./run.sh -i ./data -o ./output -n 4 -q 100 -f /tmp/sensor_fifo -s /sensor_shm
    ```
 
+---
+
+## 📖 Full Documentation
+For the full documentation and explanation of the project, visit the [Project Report](./report/).
