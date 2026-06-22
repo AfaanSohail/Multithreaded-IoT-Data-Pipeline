@@ -1,0 +1,38 @@
+# ====================================================================
+# Git Ignore Configuration for C++ POSIX Pipeline Project
+# ====================================================================
+
+# Prerequisites / Compiled Binaries (Root)
+/dispatcher
+
+# Compiled Binaries (src/ folder)
+/src/ingester
+/src/processor
+/src/reporter
+
+# Compiled Object Files & Libraries
+*.o
+*.out
+*.so
+*.a
+
+# Temporary Logs & Output Folders
+/logs/*
+!/logs/.gitkeep
+
+/output/*
+!/output/.gitkeep
+
+# Ignore CSV Data files (Avoid uploading huge telemetry files)
+/data/*.csv
+!/data/sample.csv  # Keep a small sample.csv if you want to share test files
+
+# OS-Specific system files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
